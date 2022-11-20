@@ -1,3 +1,3 @@
 import Search from "./Search";
-import "./button.scss";
+import "./search.scss";
 export default Search;

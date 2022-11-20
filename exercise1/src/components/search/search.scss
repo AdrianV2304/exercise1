@@ -1,0 +1,63 @@
+@use "../../shared/scss/" as *;
+
+.search {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: fit-content;
+  height: 400px;
+  background-color: $white;
+  border-radius: 32px;
+
+  &__parameters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 400px;
+    margin: 40px 32px;
+
+    &--title {
+      font-size: 24px;
+      font-weight: 700;
+      color: $blue;
+    }
+
+    &--buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 10px;
+
+      > :last-child {
+        background-color: $blue;
+        padding: 16px;
+        color: $white;
+      }
+    }
+    &--button {
+      width: 102px;
+      height: 64px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 8px;
+      border-color: $grey;
+    }
+  }
+
+  &__bar {
+    display: flex;
+    border: solid 1px $black;
+    margin: 0px 32px;
+    padding: 16px;
+    align-items: center;
+    border-radius: 8px;
+    border-color: $grey;
+
+    &--input {
+      border: none;
+      outline: none;
+      padding-left: 8px;
+    }
+  }
+}
