@@ -3,9 +3,8 @@
 .search {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: fit-content;
-  height: 400px;
+  margin: 20px auto;
+  width: 100%;
   background-color: $white;
   border-radius: 32px;
 
@@ -28,8 +27,6 @@
       flex-direction: row;
       justify-content: flex-end;
       gap: 10px;
-
-      
     }
     &--button {
       width: fit-content;
@@ -54,7 +51,7 @@
   &__bar {
     display: flex;
     border: solid 1px $black;
-    margin: 0px 32px;
+    margin: 0px 32px 40px 32px;
     padding: 16px;
     align-items: center;
     border-radius: 8px;

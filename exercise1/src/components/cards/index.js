@@ -1,3 +1,3 @@
 import Cards from "./Cards";
-import "./cards.scss";
+import "./Cards.scss";
 export default Cards;
