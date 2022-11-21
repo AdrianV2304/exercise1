@@ -1,27 +1,29 @@
 import React from "react";
-import { RiPencilLine } from "react-icons/ri";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { GoSearch } from "react-icons/go";
+import { RiPencilLine } from "react-icons/ri";
+import Button from "../button";
 
-const Search = () => {
+const duCeva = () => console.log("pula mea");
+
+const Search = (props) => {
+  console.log(props.adi);
+
   return (
     <div className="search">
       <div className="search__parameters">
-        <span className="search__parameters--title">My Parameters</span>
+        <span className="search__parameters--title">{props.adi}</span>
 
         <div className="search__parameters--buttons">
-          <button className="search__parameters--button">
-            <RiPencilLine size={32} />
-            <span className="search__parameters--text">Edit</span>
-          </button>
+          <Button label="Edit" ceva="flip" functie={duCeva}><RiPencilLine size={32} /></Button>
 
           <button className="search__parameters--button">
             <RiDeleteBinLine size={32} />
             <span className="search__parameters--text">Delete</span>
           </button>
 
-          <button className="search__parameters--button">
-            <span className="search__parameters--text">Create Parameter</span>
+          <button className="search__parameters--button flip">
+            Create Parameter
           </button>
         </div>
       </div>

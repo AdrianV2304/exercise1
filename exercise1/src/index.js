@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./shared/scss/index.scss";
 import Search from "./components/search";
+import Cards from "./components/cards";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Search />
+    <Search adi="My pictures" horea="My bitze"/>
+    <Cards />
   </React.StrictMode>
 );
 

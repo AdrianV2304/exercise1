@@ -15,11 +15,12 @@
     justify-content: space-between;
     gap: 400px;
     margin: 40px 32px;
+    align-items: center;
 
     &--title {
       font-size: 24px;
       font-weight: 700;
-      color: $blue;
+      color: $darkblue;
     }
 
     &--buttons {
@@ -28,20 +29,25 @@
       justify-content: flex-end;
       gap: 10px;
 
-      > :last-child {
-        background-color: $blue;
-        padding: 16px;
-        color: $white;
-      }
+      
     }
     &--button {
-      width: 102px;
+      width: fit-content;
       height: 64px;
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: center;
+      gap: 5px;
       border-radius: 8px;
       border-color: $grey;
+      background-color: $white;
+
+      &.flip {
+        background-color: $darkblue;
+        padding: 16px;
+        color: $white;
+      }
     }
   }
 
@@ -58,6 +64,8 @@
       border: none;
       outline: none;
       padding-left: 8px;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 }

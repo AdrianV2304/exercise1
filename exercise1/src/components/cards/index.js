@@ -1,3 +1,3 @@
 import Cards from "./Cards";
-import "./button.scss";
+import "./cards.scss";
 export default Cards;
